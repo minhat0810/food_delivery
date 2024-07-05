@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="50dp">
+     <TextView
+         android:layout_width="match_parent"
+         android:layout_height="50dp"
+         android:text="Thêm danh mục"
+         android:textStyle="bold"
+         android:fontFamily="@font/oswald"
+         android:textSize="30dp"
+         android:gravity="center"
+         />
+ </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp">
+
+        <ImageView
+            android:id="@+id/firebaseImage"
+            android:background="@drawable/bgr_home"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:padding="10dp"
+            android:src="@drawable/piza_cate" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/selectImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="100dp"
+            android:background="@drawable/button_add"
+            android:padding="10dp"
+            android:text="Chọn ảnh"
+            android:textColor="@color/white" />
+
+<!--        <androidx.appcompat.widget.AppCompatButton-->
+<!--            android:id="@+id/uploadImage"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            android:background="@drawable/button_add"-->
+<!--            android:padding="10dp"-->
+<!--            android:text="Tải ảnh lên"-->
+<!--            android:textColor="@color/white"-->
+<!--            />-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        >
+
+
+        <EditText
+            android:padding="12dp"
+            android:id="@+id/editNameCagetory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Nhập tên danh mục"
+            android:background="@drawable/add_item"
+            android:backgroundTint="@null"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/add"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/button_add"
+        android:padding="10dp"
+        android:text="Thêm"
+        android:textColor="@color/white" />
+
+</LinearLayout>

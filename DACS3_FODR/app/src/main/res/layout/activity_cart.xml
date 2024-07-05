@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.CartActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/backFL"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    app:srcCompat="@drawable/baseline_arrow_back_24"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/txtTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Title"
+                    android:textColor="@color/black"
+                    android:textSize="30dp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/backFL"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnWait"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:padding="5dp"
+                android:text="Đơn hàng đang chờ"
+                android:layout_marginLeft="250dp"
+                android:textColor="@color/black"
+                android:background="@drawable/custom_button"
+                />
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:minHeight="250dp">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/listRv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <ProgressBar
+                    android:id="@+id/progressBar6"
+                    style="?android:attr/progressBarStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Giỏ hàng trống"
+                    android:textSize="20dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_margin="10dp"
+                android:background="@drawable/bgr_oder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/editCoupon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Nhập mã giảm giá"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnApply"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Áp dụng"
+                    android:layout_marginLeft="50dp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/button_add"
+                    />
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thông tin đặt hàng:"
+                android:textStyle="bold"
+                android:fontFamily="@font/sedan"
+                android:textSize="30dp"
+                />
+            <LinearLayout
+                android:padding="12dp"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/bgr_oder">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="Tên người đặt:"
+                            android:textSize="15dp"
+                            android:textStyle="bold"
+                            tools:ignore="MissingConstraints"
+                            tools:layout_editor_absoluteX="16dp"
+                            tools:layout_editor_absoluteY="0dp" />
+
+                        <TextView
+                            android:id="@+id/tvtName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="75dp"
+                            android:text=""
+                            android:textSize="15dp"
+                            android:textStyle="bold"
+                            tools:ignore="MissingConstraints"
+                            tools:layout_editor_absoluteX="237dp"
+                            tools:layout_editor_absoluteY="0dp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Số điên thoại:"
+                            android:textSize="15dp"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="10dp"
+                            tools:ignore="MissingConstraints"
+                            tools:layout_editor_absoluteX="16dp"
+                            tools:layout_editor_absoluteY="0dp" />
+
+                        <TextView
+
+                            android:id="@+id/tvtSDT"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textSize="15dp"
+                            android:layout_marginLeft="80dp"
+                            android:textStyle="bold"
+                            tools:ignore="MissingConstraints"
+                            tools:layout_editor_absoluteX="237dp"
+                            tools:layout_editor_absoluteY="0dp" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Địa chỉ nhận hàng:"
+                            android:textSize="15dp"
+                            android:layout_marginLeft="10dp"
+                            android:textStyle="bold"
+                            tools:ignore="MissingConstraints"
+                            tools:layout_editor_absoluteX="16dp"
+                            tools:layout_editor_absoluteY="0dp" />
+
+                        <TextView
+                            android:layout_marginLeft="50dp"
+                            android:id="@+id/tvtAdress"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textSize="15dp"
+                            android:textStyle="bold"
+                            tools:ignore="MissingConstraints"
+                            tools:layout_editor_absoluteX="237dp"
+                            tools:layout_editor_absoluteY="0dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view6"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#000000" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+
+                    </LinearLayout>
+                </LinearLayout>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnAddInf"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="200dp"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_add"
+                    android:text="Sửa thông tin"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tổng kết đơn:"
+                android:textStyle="bold"
+                android:fontFamily="@font/sedan"
+                android:textSize="30dp"
+                />
+
+            <LinearLayout
+                android:padding="12dp"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/bgr_oder">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:text="Tổng phụ:"
+                                    android:textSize="15dp"
+                                android:textStyle="bold"
+                                tools:ignore="MissingConstraints"
+                                tools:layout_editor_absoluteX="16dp"
+                                tools:layout_editor_absoluteY="0dp" />
+
+                            <TextView
+                                android:id="@+id/subtotal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="150dp"
+                                android:text="50.000VNĐ"
+                                android:textSize="15dp"
+                                android:textStyle="bold"
+                                tools:ignore="MissingConstraints"
+                                tools:layout_editor_absoluteX="237dp"
+                                tools:layout_editor_absoluteY="0dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Phí vận chuyển:"
+                            android:textSize="15dp"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="10dp"
+                            tools:ignore="MissingConstraints"
+                            tools:layout_editor_absoluteX="16dp"
+                            tools:layout_editor_absoluteY="0dp" />
+
+                        <TextView
+
+                            android:id="@+id/orderFee"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="20.000VNĐ"
+                            android:textSize="15dp"
+                            android:layout_marginLeft="110dp"
+                            android:textStyle="bold"
+                            tools:ignore="MissingConstraints"
+                            tools:layout_editor_absoluteX="237dp"
+                            tools:layout_editor_absoluteY="0dp" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Mã giảm giá:"
+                            android:textSize="15dp"
+                            android:layout_marginLeft="10dp"
+                            android:textStyle="bold"
+                            tools:ignore="MissingConstraints"
+                            tools:layout_editor_absoluteX="16dp"
+                            tools:layout_editor_absoluteY="0dp" />
+
+                        <TextView
+                            android:layout_marginLeft="130dp"
+                            android:id="@+id/tvtCoupon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="20.000VNĐ"
+                            android:textSize="15dp"
+                            android:textStyle="bold"
+                            tools:ignore="MissingConstraints"
+                            tools:layout_editor_absoluteX="237dp"
+                            tools:layout_editor_absoluteY="0dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view5"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#000000" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Tổng tiền:"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="10dp"
+                            tools:ignore="MissingConstraints"
+                            tools:layout_editor_absoluteX="16dp"
+                            tools:layout_editor_absoluteY="0dp" />
+
+                        <TextView
+                            android:layout_marginLeft="100dp"
+                            android:id="@+id/tvtTotal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="20.000VNĐ"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            tools:ignore="MissingConstraints"
+                            tools:layout_editor_absoluteX="237dp"
+                            tools:layout_editor_absoluteY="0dp" />
+                    </LinearLayout>
+                </LinearLayout>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnOrder"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_add"
+                    android:text="Đặt hàng"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/home"
+        android:orderInCategory="100"
+        android:title="Trang chủ"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/cart"
+        android:orderInCategory="100"
+        android:title="Giỏ hàng"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/search"
+        android:orderInCategory="100"
+        android:title="Tìm kiếm"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/history"
+        android:orderInCategory="100"
+        android:title="Lịch sử"
+        app:showAsAction="never" />
+
+</menu>

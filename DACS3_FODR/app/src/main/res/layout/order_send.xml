@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Thêm thông tin"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/oswald"
+                    android:textSize="30dp"
+                    android:gravity="center"
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+                <EditText
+                    android:id="@+id/editName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/add_item"
+                    android:backgroundTint="@null"
+                    android:ems="10"
+                    android:hint="Họ và tên"
+                    android:padding="12dp" />
+
+
+                <EditText
+                    android:id="@+id/editSDT"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/add_item"
+                    android:backgroundTint="@null"
+                    android:ems="10"
+                    android:hint="Số điện thoại"
+                    android:padding="12dp" />
+
+                <EditText
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/editAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/add_item"
+                    android:backgroundTint="@null"
+                    android:ems="10"
+                    android:hint="Địa chỉ "
+                    android:padding="12dp" />
+
+
+
+            </LinearLayout>
+            <Button
+                android:id="@+id/addInf"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/button_add"
+                android:padding="10dp"
+                android:text="Thêm"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.core.widget.NestedScrollView>

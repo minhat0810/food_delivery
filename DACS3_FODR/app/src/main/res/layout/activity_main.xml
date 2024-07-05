@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.MainActivity"
+    android:background="@drawable/gradient_background"
+    >
+
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="192dp"
+        android:layout_height="164dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/bannerapp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="109dp"
+        tools:layout_editor_absoluteY="46dp" />
+
+    <TextView
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/oswald"
+        android:text="Dvers Food"
+        android:textSize="50dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="107dp"
+        tools:layout_editor_absoluteY="210dp" />
+
+        <Button
+            android:id="@+id/btnlogin"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_button"
+            android:text="Đăng nhập bằng Email"
+            android:textColor="@color/black"
+            app:backgroundTint="@null"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="143dp"
+            tools:layout_editor_absoluteY="384dp"
+            />
+
+<!--      <LinearLayout-->
+<!--          android:layout_width="wrap_content"-->
+<!--          android:layout_height="wrap_content">-->
+<!--            <TextView-->
+<!--                android:layout_marginLeft="70dp"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Bạn chưa có tài khoản?"-->
+<!--                android:textSize="16dp"-->
+<!--                android:textColor="@color/black"-->
+<!--                tools:ignore="MissingConstraints"-->
+<!--                tools:layout_editor_absoluteX="78dp"-->
+<!--                tools:layout_editor_absoluteY="441dp" />-->
+
+<!--            <Button-->
+<!--                android:id="@+id/btnSignUp"-->
+<!--                android:layout_width="114dp"-->
+<!--                android:layout_height="40dp"-->
+<!--                android:backgroundTint="#9CF4FF"-->
+<!--                android:text="Đăng kí"-->
+<!--                android:textColor="@color/purple_700"-->
+<!--                tools:ignore="MissingConstraints"-->
+<!--                tools:layout_editor_absoluteX="260dp"-->
+<!--                tools:layout_editor_absoluteY="434dp"-->
+
+<!--                />-->
+<!--      </LinearLayout>-->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp">
+            <ImageView
+                android:layout_width="49dp"
+                android:layout_height="52dp"
+                android:labelFor="@+id/btnloginGG"
+                android:src="@drawable/icongg"
+                android:textColor="@color/black"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="38dp"
+                tools:layout_editor_absoluteY="486dp" />
+            <Button
+                android:id="@+id/btnloginGG"
+                android:layout_width="251dp"
+                android:layout_height="55dp"
+                android:background="@drawable/custom_button"
+                android:text="Đăng nhập bằng Google"
+                android:textColor="@color/black"
+                app:backgroundTint="@null"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="88dp"
+                tools:layout_editor_absoluteY="486dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/facebook"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="38dp"
+                tools:layout_editor_absoluteY="550dp" />
+                <Button
+                    android:id="@+id/btnloginFB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_button"
+                    android:text="Đăng nhập bằng Facabook"
+                    android:textColor="@color/black"
+                    app:backgroundTint="@null"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="88dp"
+                    tools:layout_editor_absoluteY="550dp"></Button>
+
+        </LinearLayout>
+
+<!--    <ImageView-->
+<!--        android:layout_width="137dp"-->
+<!--        android:layout_height="115dp"-->
+<!--        android:layout_marginTop="50dp"-->
+<!--        android:src="@drawable/app1" />-->
+</LinearLayout>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.dacs3_fodr">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/bannerapp"
+        android:label="DVers Food"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DACS3_FODR"
+        tools:targetApi="31">
+        <activity
+            android:name=".Activity.ShipInf"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.ShipActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.SignUpForShip"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.ui.ShipActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.ui.SignUpForShipper"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.ui.HistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.ui.OrderInf"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.OrderWait"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.AllFoodActivity"
+            android:exported="false" /> <!-- <activity -->
+        <!-- android:name=".Activity.ChefActivy2" -->
+        <!-- android:exported="false" -->
+        <!-- android:label="@string/title_activity_chef_activy2" -->
+        <!-- android:theme="@style/Theme.DACS3_FODR.NoActionBar" /> -->
+        <activity
+            android:name=".ChefActivity"
+            android:exported="false"
+            android:label="@string/title_activity_chef" />
+        <activity
+            android:name=".Activity.SignUpForCheef"
+            android:exported="false" />
+        <!--
+             TODO: Before you run your application, you need a Google Maps API key.
+
+             To get one, follow the directions here:
+
+                https://developers.google.com/maps/documentation/android-sdk/get-api-key
+
+             Once you have your API key (it starts with "AIza"), define a new property in your
+             project's local.properties file (e.g. MAPS_API_KEY=Aiza...), and replace the
+             "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}".
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="YOUR_API_KEY" />
+
+        <activity
+            android:name=".Activity.MapsActivity"
+            android:exported="false"
+            android:label="@string/title_activity_maps" />
+        <activity
+            android:name=".Activity.EditUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.CartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.DetailFActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.ListFoodActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginFor"
+            android:exported="false" />
+        <activity
+            android:name=".ui.logout.LogoutFragment"
+            android:exported="false"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".Activity.SignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.SplashActivity"
+            android:exported="true">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity.HomeActivity"
+            android:exported="false"
+            android:label="@string/title_activity_home"
+            android:theme="@style/Theme.DACS3_FODR.NoActionBar">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Activity.LoginActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Activity.MainActivity"
+            android:exported="false">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+    </application>
+
+</manifest>

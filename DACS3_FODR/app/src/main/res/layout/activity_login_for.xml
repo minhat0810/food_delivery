@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.MainActivity"
+    android:background="@drawable/gradient_background"
+    >
+
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="192dp"
+        android:layout_height="164dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/bannerapp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="109dp"
+        tools:layout_editor_absoluteY="46dp" />
+
+    <TextView
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/oswald"
+        android:text="Dvers Food"
+        android:textSize="50dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="107dp"
+        tools:layout_editor_absoluteY="210dp" />
+
+    <Button
+        android:layout_marginTop="70dp"
+        android:id="@+id/lgUser"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_button"
+        android:text="Đăng kí cho người dùng"
+        android:textColor="@color/black"
+        app:backgroundTint="@null"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="143dp"
+        tools:layout_editor_absoluteY="384dp"
+        />
+
+    <!--      <LinearLayout-->
+    <!--          android:layout_width="wrap_content"-->
+    <!--          android:layout_height="wrap_content">-->
+    <!--            <TextView-->
+    <!--                android:layout_marginLeft="70dp"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:text="Bạn chưa có tài khoản?"-->
+    <!--                android:textSize="16dp"-->
+    <!--                android:textColor="@color/black"-->
+    <!--                tools:ignore="MissingConstraints"-->
+    <!--                tools:layout_editor_absoluteX="78dp"-->
+    <!--                tools:layout_editor_absoluteY="441dp" />-->
+
+    <!--            <Button-->
+    <!--                android:id="@+id/btnSignUp"-->
+    <!--                android:layout_width="114dp"-->
+    <!--                android:layout_height="40dp"-->
+    <!--                android:backgroundTint="#9CF4FF"-->
+    <!--                android:text="Đăng kí"-->
+    <!--                android:textColor="@color/purple_700"-->
+    <!--                tools:ignore="MissingConstraints"-->
+    <!--                tools:layout_editor_absoluteX="260dp"-->
+    <!--                tools:layout_editor_absoluteY="434dp"-->
+
+    <!--                />-->
+    <!--      </LinearLayout>-->
+
+
+        <Button
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:id="@+id/lgChef"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:background="@drawable/custom_button"
+            android:text="Đăng kí cho tiệm"
+            android:textColor="@color/black"
+            app:backgroundTint="@null"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="88dp"
+            tools:layout_editor_absoluteY="486dp"
+
+            />
+
+
+
+
+        <Button
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:id="@+id/lgShipper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_button"
+            android:text="Đăng kí người giao hàng"
+            android:textColor="@color/black"
+            app:backgroundTint="@null"
+            android:shadowRadius="10"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="88dp"
+            tools:layout_editor_absoluteY="550dp"></Button>
+
+<!--    <ImageButton-->
+<!--        android:layout_marginTop="50dp"-->
+<!--        android:id="@+id/btnBack"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:src="@drawable/baseline_arrow_back_24"-->
+<!--        android:backgroundTint="@null"-->
+<!--        android:background="@drawable/custom_button"-->
+<!--        />-->
+    <!--    <ImageView-->
+    <!--        android:layout_width="137dp"-->
+    <!--        android:layout_height="115dp"-->
+    <!--        android:layout_marginTop="50dp"-->
+    <!--        android:src="@drawable/app1" />-->
+</LinearLayout>

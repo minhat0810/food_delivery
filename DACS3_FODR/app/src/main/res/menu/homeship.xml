@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/home"
+        android:orderInCategory="100"
+        android:title="Trang chủ"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/shipping"
+        android:orderInCategory="100"
+        android:title="Đơn hàng đang giao"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/history"
+        android:orderInCategory="100"
+        android:title="Lịch sử giao hàng"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/logout"
+        android:orderInCategory="100"
+        android:title="Đăng xuất"
+        app:showAsAction="never" />
+
+</menu>

@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bgr_home">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="430dp"
+                >
+
+                <ImageView
+                    android:id="@+id/imageFood"
+                    android:layout_width="430dp"
+                    android:layout_height="430dp"
+                  
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="MissingConstraints"
+                    tools:srcCompat="@tools:sample/avatars">
+
+                </ImageView>
+
+                <ImageView
+                    android:id="@+id/btnBack"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/baseline_arrow_back_24"
+                    tools:ignore="MissingConstraints" />
+
+                <!--                <ImageView-->
+<!--                    android:id="@+id/imageView3"-->
+<!--                    android:layout_width="50dp"-->
+<!--                    android:layout_height="50dp"-->
+<!--                    app:srcCompat="@drawable/baseline_favorite_border_24"-->
+<!--                    tools:ignore="MissingConstraints"-->
+<!--                    tools:layout_editor_absoluteX="361dp"-->
+<!--                    tools:layout_editor_absoluteY="350dp" />-->
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tvtTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Title"
+                android:textSize="30dp"
+                android:fontFamily="@font/sedan"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tvtPrice"
+                    android:fontFamily="@font/sedan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="50.000"
+                    android:textSize="30dp"
+                    android:textColor="#FF0000"
+                    />
+                <TextView
+                    android:id="@+id/tvtTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="100dp"
+                    android:fontFamily="@font/sedan"
+                    android:text="15 phút"
+                    android:textSize="20dp"
+                    android:drawableRight="@drawable/baseline_access_time_24"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tvtAdress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sedan"
+                android:text="Địa chrsadvgdhhhdg"
+                android:textSize="28dp"/>
+            <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp">
+
+
+                <RatingBar
+                    android:id="@+id/ratingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:numStars="5"
+                    android:progressTint="#FFEB3B"
+                    android:rating="3.4" />
+
+            <TextView
+                android:id="@+id/tvtRating"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:fontFamily="@font/sedan"
+                android:text="5 rating"
+                android:textSize="20dp" />
+
+
+
+            </LinearLayout>
+
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mô tả"
+            android:textSize="30dp"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/oswald"
+                />
+
+            <TextView
+            android:id="@+id/tvtDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:minHeight="120dp"
+            android:padding="10dp"
+                android:fontFamily="@font/oswald"
+                android:textSize="20dp"
+            android:text="Trà sữa bạc hà là một trong các loại trà sữa ngon và có mặt hầu như trong menu của các tiệm trà sữa. Trà sữa bạc hà ngoài vị chát nhẹ thì còn có vị thơm nồng và ngọt ngọt của sữa, the mát của bạc hà. Thức uống này có thể kết hợp thêm các topping như: trân châu đen, trân châu trắng, thạch rau câu,… để tăng phần hấp dẫn." />
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@font/oswald"
+                android:text="Số lượng:"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:id="@+id/giamSL"
+                android:layout_marginLeft="15dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/giam" />
+
+                <TextView
+                    android:id="@+id/tvtNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="25dp" />
+
+            <ImageView
+                android:id="@+id/tangSL"
+                android:layout_marginLeft="15dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/tang" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="26dp"
+                    tools:layout_editor_absoluteY="6dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tổng tiền:"
+                        android:textSize="20dp"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:id="@+id/tvtTotal"
+                        android:textColor="#FF0000"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0 VNĐ"
+                        android:textSize="20dp"
+                        android:textStyle="italic" />
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/addbtn"
+                    android:layout_marginLeft="100dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_add"
+                    android:drawableStart="@drawable/baseline_add_shopping_cart_24"
+                    android:padding="10dp"
+                    android:text="Thêm vào giỏ hàng"
+                    android:textColor="@color/white"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="212dp"
+                    tools:layout_editor_absoluteY="16dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.core.widget.NestedScrollView>
+
+

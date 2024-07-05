@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical" >
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="50dp">
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="50dp"
+                   android:text="Thêm sản phẩm"
+                   android:textStyle="bold"
+                   android:fontFamily="@font/oswald"
+                   android:textSize="30dp"
+                   android:gravity="center"
+                   />
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:padding="12dp">
+
+               <ImageView
+                   android:id="@+id/firebaseImage"
+                   android:background="@drawable/bgr_home"
+                   android:layout_width="120dp"
+                   android:layout_height="120dp"
+                   android:padding="10dp"
+                   android:src="@drawable/piza_cate" />
+
+               <androidx.appcompat.widget.AppCompatButton
+                   android:id="@+id/selectImageFood"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:layout_marginLeft="20dp"
+                   android:background="@drawable/button_add"
+                   android:padding="10dp"
+                   android:text="Chọn ảnh"
+                   android:textColor="@color/white" />
+
+               <!--        <androidx.appcompat.widget.AppCompatButton-->
+               <!--            android:id="@+id/uploadImage"-->
+               <!--            android:layout_width="wrap_content"-->
+               <!--            android:layout_height="wrap_content"-->
+               <!--            android:layout_gravity="center"-->
+               <!--            android:layout_marginLeft="10dp"-->
+               <!--            android:background="@drawable/button_add"-->
+               <!--            android:padding="10dp"-->
+               <!--            android:text="Tải ảnh lên"-->
+               <!--            android:textColor="@color/white"-->
+               <!--            />-->
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+                 android:padding="20dp"
+               android:layout_marginLeft="20dp"
+               android:layout_marginRight="20dp"
+               android:background="@drawable/add_item">
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textColor="@color/black"
+                  android:text="Phân loại"
+                  android:textStyle=""
+                  android:textSize="20dp"/>
+               <Spinner
+                   android:id="@+id/cateSpinner"
+                   android:layout_marginLeft="50dp"
+                   android:layout_width="200dp"
+                   android:layout_height="match_parent"
+                   />
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               android:padding="20dp">
+
+
+               <EditText
+                   android:id="@+id/editNameP"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:background="@drawable/add_item"
+                   android:backgroundTint="@null"
+                   android:ems="10"
+                   android:hint="Nhập tên sản phẩm"
+                   android:padding="12dp" />
+
+               <EditText
+                   android:layout_marginTop="20dp"
+                   android:id="@+id/editPrice"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:background="@drawable/add_item"
+                   android:backgroundTint="@null"
+                   android:ems="10"
+                   android:hint="Nhập giá sản phẩm"
+                   android:padding="12dp" />
+
+
+               <EditText
+                   android:layout_marginTop="20dp"
+                   android:id="@+id/editDesc"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:minHeight="100dp"
+                   android:background="@drawable/add_item"
+                   android:backgroundTint="@null"
+                   android:ems="10"
+                   android:hint="Mô tả sản phẩm"
+                   android:padding="12dp" />
+               <LinearLayout
+                   android:layout_marginLeft="5dp"
+                   android:layout_width="match_parent"
+                   android:padding="20dp"
+                   android:layout_marginTop="20dp"
+                   android:layout_height="match_parent"
+                   android:background="@drawable/add_item">
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                      android:text="Thời gian"
+                       android:textStyle="bold"
+                       android:textSize="20dp"
+                       />
+                   <Spinner
+                       android:id="@+id/timeSp"
+                       android:layout_width="200dp"
+                       android:layout_height="30dp"
+                       android:layout_marginLeft="50dp"
+                       />
+               </LinearLayout>
+           </LinearLayout>
+           <Button
+               android:id="@+id/addFood"
+               android:layout_marginTop="10dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"
+               android:layout_marginLeft="20dp"
+               android:background="@drawable/button_add"
+               android:padding="10dp"
+               android:text="Thêm"
+               android:textColor="@color/white" />
+       </LinearLayout>
+   </ScrollView>
+
+</androidx.core.widget.NestedScrollView>
